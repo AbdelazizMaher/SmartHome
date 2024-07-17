@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+.headerlabel{
+    font-size: 5em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    left: 100px;
+    margin-left: 100px;
+    margin-top: 140px;
+    position: absolute;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.headerimage{
+    width: 100%;
+    border-radius: 0px 0px 80px 80px;
+    border: 2px solid #eee064;
+}
+.headerlabel:hover{
+    color: #eee064;
+    transition: 0.5s;
+    transform: scale(1.1);
+}

@@ -1,6 +1,11 @@
 import {  useRef, useState, useEffect } from "react";
 import Axios from "axios";
 
+import "./App.css"
+import Header from "./components/Header";
+import Background from "./components/Background";
+
+
 export default function App() {
   const identifier = useRef();
   const name = useRef();
@@ -27,6 +32,10 @@ export default function App() {
 
   return (
     <div className="App">
+      <>
+      <Background />
+      <Header />
+      </>
       <>
       {devices.map(({_id, identifier, name, status}) => {
         return(
