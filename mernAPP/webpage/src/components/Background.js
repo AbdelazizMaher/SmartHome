@@ -1,7 +1,6 @@
 import "./Background.css";
 export default function Background() {
   return (
-    <Background>
       <div className="background">
         <img
           className="backgroundimage"
@@ -9,6 +8,5 @@ export default function Background() {
           alt="background"
         ></img>
       </div>
-    </Background>
   );
 }

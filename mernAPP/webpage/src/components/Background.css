@@ -1,6 +1,5 @@
 .backgroundimage{
-    background: #222020db;
-    filter: blur(2px);
+    filter: blur(3px);
     -webkit-filter: blur(3px);
     position: absolute;
     z-index: -1;
