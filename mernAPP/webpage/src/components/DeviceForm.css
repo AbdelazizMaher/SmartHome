@@ -1,0 +1,61 @@
+.form {
+    margin-top: 10%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    height: fit-content;
+    padding: 20px;
+}
+.form:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(238, 241, 14);
+    border-radius: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    margin: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(238, 241, 14);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.form h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(238, 241, 14);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 1px 2px rgba(255, 217, 2, 0.3);
+    transition: color 0.3s ease-in-out;
+}
+button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: rgb(238, 241, 14);
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: rgba(238, 241, 14, 0.8);
+    color: white;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(238, 241, 14, 0.5);
+}
