@@ -1,0 +1,2 @@
+/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/rebuild_cache.dir
+/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/edit_cache.dir
