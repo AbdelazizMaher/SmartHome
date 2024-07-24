@@ -1,2 +1,7 @@
+/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/install/strip.dir
+/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/install/local.dir
+/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/install.dir
+/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/list_install_components.dir
 /home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/rebuild_cache.dir
 /home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/edit_cache.dir
+/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/Device-Controller.dir

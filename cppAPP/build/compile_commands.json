@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/abdelaziz/SmartHome/cppAPP/build",
+  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser  -g   -o CMakeFiles/Device-Controller.dir/src/clientHandler/clientHandler.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/clientHandler/clientHandler.cpp",
+  "file": "/home/abdelaziz/SmartHome/cppAPP/src/clientHandler/clientHandler.cpp"
+},
+{
+  "directory": "/home/abdelaziz/SmartHome/cppAPP/build",
+  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser  -g   -o CMakeFiles/Device-Controller.dir/src/clientHandler/httpGetHandle.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/clientHandler/httpGetHandle.cpp",
+  "file": "/home/abdelaziz/SmartHome/cppAPP/src/clientHandler/httpGetHandle.cpp"
+},
+{
+  "directory": "/home/abdelaziz/SmartHome/cppAPP/build",
+  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser  -g   -o CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/parser/parser.cpp",
+  "file": "/home/abdelaziz/SmartHome/cppAPP/src/parser/parser.cpp"
+},
+{
+  "directory": "/home/abdelaziz/SmartHome/cppAPP/build",
+  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser  -g   -o CMakeFiles/Device-Controller.dir/main.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/main.cpp",
+  "file": "/home/abdelaziz/SmartHome/cppAPP/main.cpp"
+}
+]

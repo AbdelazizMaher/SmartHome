@@ -839,7 +839,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Project"
+			"value" : "Device-Controller"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1120,6 +1120,30 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "Device-Controller_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/abdelaziz/SmartHome/cppAPP/build"
+		},
+		{
+			"name" : "Device-Controller_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/abdelaziz/SmartHome/cppAPP"
 		},
 		{
 			"name" : "Project_BINARY_DIR",

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Device-Controller.dir/src/clientHandler/clientHandler.cpp.o CMakeFiles/Device-Controller.dir/src/clientHandler/httpGetHandle.cpp.o CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.o CMakeFiles/Device-Controller.dir/main.cpp.o  -o Device-Controller 

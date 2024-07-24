@@ -56,6 +56,52 @@ CMAKE_BINARY_DIR = /home/abdelaziz/SmartHome/cppAPP/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -110,14 +156,152 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named Device-Controller
+
+# Build rule for target.
+Device-Controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Device-Controller
+.PHONY : Device-Controller
+
+# fast build rule for target.
+Device-Controller/fast:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/build
+.PHONY : Device-Controller/fast
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+src/clientHandler/clientHandler.o: src/clientHandler/clientHandler.cpp.o
+
+.PHONY : src/clientHandler/clientHandler.o
+
+# target to build an object file
+src/clientHandler/clientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/clientHandler/clientHandler.cpp.o
+.PHONY : src/clientHandler/clientHandler.cpp.o
+
+src/clientHandler/clientHandler.i: src/clientHandler/clientHandler.cpp.i
+
+.PHONY : src/clientHandler/clientHandler.i
+
+# target to preprocess a source file
+src/clientHandler/clientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/clientHandler/clientHandler.cpp.i
+.PHONY : src/clientHandler/clientHandler.cpp.i
+
+src/clientHandler/clientHandler.s: src/clientHandler/clientHandler.cpp.s
+
+.PHONY : src/clientHandler/clientHandler.s
+
+# target to generate assembly for a file
+src/clientHandler/clientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/clientHandler/clientHandler.cpp.s
+.PHONY : src/clientHandler/clientHandler.cpp.s
+
+src/clientHandler/httpGetHandle.o: src/clientHandler/httpGetHandle.cpp.o
+
+.PHONY : src/clientHandler/httpGetHandle.o
+
+# target to build an object file
+src/clientHandler/httpGetHandle.cpp.o:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/clientHandler/httpGetHandle.cpp.o
+.PHONY : src/clientHandler/httpGetHandle.cpp.o
+
+src/clientHandler/httpGetHandle.i: src/clientHandler/httpGetHandle.cpp.i
+
+.PHONY : src/clientHandler/httpGetHandle.i
+
+# target to preprocess a source file
+src/clientHandler/httpGetHandle.cpp.i:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/clientHandler/httpGetHandle.cpp.i
+.PHONY : src/clientHandler/httpGetHandle.cpp.i
+
+src/clientHandler/httpGetHandle.s: src/clientHandler/httpGetHandle.cpp.s
+
+.PHONY : src/clientHandler/httpGetHandle.s
+
+# target to generate assembly for a file
+src/clientHandler/httpGetHandle.cpp.s:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/clientHandler/httpGetHandle.cpp.s
+.PHONY : src/clientHandler/httpGetHandle.cpp.s
+
+src/parser/parser.o: src/parser/parser.cpp.o
+
+.PHONY : src/parser/parser.o
+
+# target to build an object file
+src/parser/parser.cpp.o:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.o
+.PHONY : src/parser/parser.cpp.o
+
+src/parser/parser.i: src/parser/parser.cpp.i
+
+.PHONY : src/parser/parser.i
+
+# target to preprocess a source file
+src/parser/parser.cpp.i:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.i
+.PHONY : src/parser/parser.cpp.i
+
+src/parser/parser.s: src/parser/parser.cpp.s
+
+.PHONY : src/parser/parser.s
+
+# target to generate assembly for a file
+src/parser/parser.cpp.s:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.s
+.PHONY : src/parser/parser.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... Device-Controller"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/clientHandler/clientHandler.o"
+	@echo "... src/clientHandler/clientHandler.i"
+	@echo "... src/clientHandler/clientHandler.s"
+	@echo "... src/clientHandler/httpGetHandle.o"
+	@echo "... src/clientHandler/httpGetHandle.i"
+	@echo "... src/clientHandler/httpGetHandle.s"
+	@echo "... src/parser/parser.o"
+	@echo "... src/parser/parser.i"
+	@echo "... src/parser/parser.s"
 .PHONY : help
 
 
