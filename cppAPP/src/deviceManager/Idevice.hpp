@@ -19,8 +19,18 @@ struct devices
 class Idevice
 {
 public:
-private:
     virtual ~Idevice() = default;
+
+    virtual bool run(devices status) = 0;
+
+    bool contains(std::string name) 
+    {
+        std::transform(name.begin(), name.end(), name.begin(), ::tolower);
+        return std::find(possible_names.begin(), possible_names.end(), name) != possible_names.end();
+    }
+protected:
+    std::vector<std::string> possible_names;
+    bool last_status = false;    
 };
 
 } // namespace sh
