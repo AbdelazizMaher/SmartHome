@@ -16,7 +16,7 @@ bool airConditioner::run(devices status_dev)
     {
         last_status = status_dev.status;
 
-        
+        //TODO
     }
 }
 
