@@ -250,6 +250,87 @@ src/clientHandler/httpGetHandle.cpp.s:
 	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/clientHandler/httpGetHandle.cpp.s
 .PHONY : src/clientHandler/httpGetHandle.cpp.s
 
+src/deviceManager/airConditioner.o: src/deviceManager/airConditioner.cpp.o
+
+.PHONY : src/deviceManager/airConditioner.o
+
+# target to build an object file
+src/deviceManager/airConditioner.cpp.o:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.o
+.PHONY : src/deviceManager/airConditioner.cpp.o
+
+src/deviceManager/airConditioner.i: src/deviceManager/airConditioner.cpp.i
+
+.PHONY : src/deviceManager/airConditioner.i
+
+# target to preprocess a source file
+src/deviceManager/airConditioner.cpp.i:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.i
+.PHONY : src/deviceManager/airConditioner.cpp.i
+
+src/deviceManager/airConditioner.s: src/deviceManager/airConditioner.cpp.s
+
+.PHONY : src/deviceManager/airConditioner.s
+
+# target to generate assembly for a file
+src/deviceManager/airConditioner.cpp.s:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.s
+.PHONY : src/deviceManager/airConditioner.cpp.s
+
+src/deviceManager/deviceManager.o: src/deviceManager/deviceManager.cpp.o
+
+.PHONY : src/deviceManager/deviceManager.o
+
+# target to build an object file
+src/deviceManager/deviceManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.o
+.PHONY : src/deviceManager/deviceManager.cpp.o
+
+src/deviceManager/deviceManager.i: src/deviceManager/deviceManager.cpp.i
+
+.PHONY : src/deviceManager/deviceManager.i
+
+# target to preprocess a source file
+src/deviceManager/deviceManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.i
+.PHONY : src/deviceManager/deviceManager.cpp.i
+
+src/deviceManager/deviceManager.s: src/deviceManager/deviceManager.cpp.s
+
+.PHONY : src/deviceManager/deviceManager.s
+
+# target to generate assembly for a file
+src/deviceManager/deviceManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.s
+.PHONY : src/deviceManager/deviceManager.cpp.s
+
+src/deviceManager/led.o: src/deviceManager/led.cpp.o
+
+.PHONY : src/deviceManager/led.o
+
+# target to build an object file
+src/deviceManager/led.cpp.o:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.o
+.PHONY : src/deviceManager/led.cpp.o
+
+src/deviceManager/led.i: src/deviceManager/led.cpp.i
+
+.PHONY : src/deviceManager/led.i
+
+# target to preprocess a source file
+src/deviceManager/led.cpp.i:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.i
+.PHONY : src/deviceManager/led.cpp.i
+
+src/deviceManager/led.s: src/deviceManager/led.cpp.s
+
+.PHONY : src/deviceManager/led.s
+
+# target to generate assembly for a file
+src/deviceManager/led.cpp.s:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.s
+.PHONY : src/deviceManager/led.cpp.s
+
 src/parser/parser.o: src/parser/parser.cpp.o
 
 .PHONY : src/parser/parser.o
@@ -277,6 +358,33 @@ src/parser/parser.cpp.s:
 	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.s
 .PHONY : src/parser/parser.cpp.s
 
+src/serviceManager/serviceManager.o: src/serviceManager/serviceManager.cpp.o
+
+.PHONY : src/serviceManager/serviceManager.o
+
+# target to build an object file
+src/serviceManager/serviceManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o
+.PHONY : src/serviceManager/serviceManager.cpp.o
+
+src/serviceManager/serviceManager.i: src/serviceManager/serviceManager.cpp.i
+
+.PHONY : src/serviceManager/serviceManager.i
+
+# target to preprocess a source file
+src/serviceManager/serviceManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.i
+.PHONY : src/serviceManager/serviceManager.cpp.i
+
+src/serviceManager/serviceManager.s: src/serviceManager/serviceManager.cpp.s
+
+.PHONY : src/serviceManager/serviceManager.s
+
+# target to generate assembly for a file
+src/serviceManager/serviceManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Device-Controller.dir/build.make CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.s
+.PHONY : src/serviceManager/serviceManager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -299,9 +407,21 @@ help:
 	@echo "... src/clientHandler/httpGetHandle.o"
 	@echo "... src/clientHandler/httpGetHandle.i"
 	@echo "... src/clientHandler/httpGetHandle.s"
+	@echo "... src/deviceManager/airConditioner.o"
+	@echo "... src/deviceManager/airConditioner.i"
+	@echo "... src/deviceManager/airConditioner.s"
+	@echo "... src/deviceManager/deviceManager.o"
+	@echo "... src/deviceManager/deviceManager.i"
+	@echo "... src/deviceManager/deviceManager.s"
+	@echo "... src/deviceManager/led.o"
+	@echo "... src/deviceManager/led.i"
+	@echo "... src/deviceManager/led.s"
 	@echo "... src/parser/parser.o"
 	@echo "... src/parser/parser.i"
 	@echo "... src/parser/parser.s"
+	@echo "... src/serviceManager/serviceManager.o"
+	@echo "... src/serviceManager/serviceManager.i"
+	@echo "... src/serviceManager/serviceManager.s"
 .PHONY : help
 
 

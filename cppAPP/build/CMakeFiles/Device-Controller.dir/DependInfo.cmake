@@ -7,7 +7,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/abdelaziz/SmartHome/cppAPP/main.cpp" "/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/Device-Controller.dir/main.cpp.o"
   "/home/abdelaziz/SmartHome/cppAPP/src/clientHandler/clientHandler.cpp" "/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/Device-Controller.dir/src/clientHandler/clientHandler.cpp.o"
   "/home/abdelaziz/SmartHome/cppAPP/src/clientHandler/httpGetHandle.cpp" "/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/Device-Controller.dir/src/clientHandler/httpGetHandle.cpp.o"
+  "/home/abdelaziz/SmartHome/cppAPP/src/deviceManager/airConditioner.cpp" "/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.o"
+  "/home/abdelaziz/SmartHome/cppAPP/src/deviceManager/deviceManager.cpp" "/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.o"
+  "/home/abdelaziz/SmartHome/cppAPP/src/deviceManager/led.cpp" "/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.o"
   "/home/abdelaziz/SmartHome/cppAPP/src/parser/parser.cpp" "/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.o"
+  "/home/abdelaziz/SmartHome/cppAPP/src/serviceManager/serviceManager.cpp" "/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,6 +21,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/clientHandler"
   "../src/deviceManger"
   "../src/parser"
+  "../src/serviceManger"
   )
 
 # Targets to which this target links.

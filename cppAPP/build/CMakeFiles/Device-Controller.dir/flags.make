@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser 
+CXX_INCLUDES = -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger 
 

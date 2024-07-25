@@ -96,9 +96,61 @@ CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abdelaziz/SmartHome/cppAPP/src/parser/parser.cpp -o CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.s
 
+CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.o: CMakeFiles/Device-Controller.dir/flags.make
+CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.o: ../src/deviceManager/deviceManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/deviceManager.cpp
+
+CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/deviceManager.cpp > CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.i
+
+CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/deviceManager.cpp -o CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.s
+
+CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.o: CMakeFiles/Device-Controller.dir/flags.make
+CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.o: ../src/deviceManager/led.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/led.cpp
+
+CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/led.cpp > CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.i
+
+CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/led.cpp -o CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.s
+
+CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.o: CMakeFiles/Device-Controller.dir/flags.make
+CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.o: ../src/deviceManager/airConditioner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/airConditioner.cpp
+
+CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/airConditioner.cpp > CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.i
+
+CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/airConditioner.cpp -o CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.s
+
+CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: CMakeFiles/Device-Controller.dir/flags.make
+CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/serviceManager/serviceManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/serviceManager/serviceManager.cpp
+
+CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abdelaziz/SmartHome/cppAPP/src/serviceManager/serviceManager.cpp > CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.i
+
+CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abdelaziz/SmartHome/cppAPP/src/serviceManager/serviceManager.cpp -o CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.s
+
 CMakeFiles/Device-Controller.dir/main.cpp.o: CMakeFiles/Device-Controller.dir/flags.make
 CMakeFiles/Device-Controller.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Device-Controller.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Device-Controller.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Device-Controller.dir/main.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/main.cpp
 
 CMakeFiles/Device-Controller.dir/main.cpp.i: cmake_force
@@ -114,6 +166,10 @@ Device__Controller_OBJECTS = \
 "CMakeFiles/Device-Controller.dir/src/clientHandler/clientHandler.cpp.o" \
 "CMakeFiles/Device-Controller.dir/src/clientHandler/httpGetHandle.cpp.o" \
 "CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.o" \
+"CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.o" \
+"CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.o" \
+"CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.o" \
+"CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o" \
 "CMakeFiles/Device-Controller.dir/main.cpp.o"
 
 # External object files for target Device-Controller
@@ -122,10 +178,14 @@ Device__Controller_EXTERNAL_OBJECTS =
 Device-Controller: CMakeFiles/Device-Controller.dir/src/clientHandler/clientHandler.cpp.o
 Device-Controller: CMakeFiles/Device-Controller.dir/src/clientHandler/httpGetHandle.cpp.o
 Device-Controller: CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.o
+Device-Controller: CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.o
+Device-Controller: CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.o
+Device-Controller: CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.o
+Device-Controller: CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o
 Device-Controller: CMakeFiles/Device-Controller.dir/main.cpp.o
 Device-Controller: CMakeFiles/Device-Controller.dir/build.make
 Device-Controller: CMakeFiles/Device-Controller.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Device-Controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abdelaziz/SmartHome/cppAPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Device-Controller"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Device-Controller.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

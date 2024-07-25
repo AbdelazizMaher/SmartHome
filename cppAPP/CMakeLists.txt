@@ -7,6 +7,10 @@ set(
     src/clientHandler/clientHandler.cpp
     src/clientHandler/httpGetHandle.cpp
     src/parser/parser.cpp
+    src/deviceManager/deviceManager.cpp
+    src/deviceManager/led.cpp
+    src/deviceManager/airConditioner.cpp
+    src/serviceManager/serviceManager.cpp
     main.cpp    
 )
 
@@ -15,6 +19,7 @@ include_directories(
     src/clientHandler
     src/deviceManger
     src/parser
+    src/serviceManger
 )
 
 add_executable(${PROJECT_NAME} ${SRC_FILES})
