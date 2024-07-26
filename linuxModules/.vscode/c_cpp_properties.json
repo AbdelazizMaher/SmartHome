@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "/usr/include",
+                "/usr/local/include",
+                "/usr/src/linux-headers-5.15.0-113-generic/include",
+                "/lib/modules/5.15.0-113-generic/build/include",
+                "/usr/src/linux-headers-5.15.0-113-generic/arch/x86/include",
+                "/usr/src/linux-headers-5.15.0-113-generic/arch/x86/include/generated",
+                "/usr/src/linux-headers-5.15.0-113-generic/include/uapi",
+                "/usr/src/linux-headers-5.15.0-113-generic/include/generated/uapi",
+                "/usr/src/linux-headers-5.15.0-113-generic/arch/x86/include/uapi",
+                "/usr/src/linux-headers-5.15.0-113-generic/arch/x86/include/generated/uapi"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
