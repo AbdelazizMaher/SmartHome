@@ -37,7 +37,7 @@ ssize_t driver_write(struct file *filp, const char __user *buff, size_t count, l
     if (copy_from_user(&value, buff, sizeof(value)))
         return -EFAULT;
 
-    /* 5. Update the current file position */
+    /* 5. Update the current pin value */
     switch (value)
     {
     case '0':
