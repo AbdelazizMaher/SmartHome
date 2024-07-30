@@ -1,42 +1,42 @@
 [
 {
   "directory": "/home/abdelaziz/SmartHome/cppAPP/build",
-  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -o CMakeFiles/Device-Controller.dir/src/clientHandler/clientHandler.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/clientHandler/clientHandler.cpp",
+  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -std=gnu++17 -o CMakeFiles/Device-Controller.dir/src/clientHandler/clientHandler.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/clientHandler/clientHandler.cpp",
   "file": "/home/abdelaziz/SmartHome/cppAPP/src/clientHandler/clientHandler.cpp"
 },
 {
   "directory": "/home/abdelaziz/SmartHome/cppAPP/build",
-  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -o CMakeFiles/Device-Controller.dir/src/clientHandler/httpGetHandle.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/clientHandler/httpGetHandle.cpp",
+  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -std=gnu++17 -o CMakeFiles/Device-Controller.dir/src/clientHandler/httpGetHandle.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/clientHandler/httpGetHandle.cpp",
   "file": "/home/abdelaziz/SmartHome/cppAPP/src/clientHandler/httpGetHandle.cpp"
 },
 {
   "directory": "/home/abdelaziz/SmartHome/cppAPP/build",
-  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -o CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/parser/parser.cpp",
+  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -std=gnu++17 -o CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/parser/parser.cpp",
   "file": "/home/abdelaziz/SmartHome/cppAPP/src/parser/parser.cpp"
 },
 {
   "directory": "/home/abdelaziz/SmartHome/cppAPP/build",
-  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -o CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/deviceManager.cpp",
+  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -std=gnu++17 -o CMakeFiles/Device-Controller.dir/src/deviceManager/deviceManager.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/deviceManager.cpp",
   "file": "/home/abdelaziz/SmartHome/cppAPP/src/deviceManager/deviceManager.cpp"
 },
 {
   "directory": "/home/abdelaziz/SmartHome/cppAPP/build",
-  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -o CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/led.cpp",
+  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -std=gnu++17 -o CMakeFiles/Device-Controller.dir/src/deviceManager/led.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/led.cpp",
   "file": "/home/abdelaziz/SmartHome/cppAPP/src/deviceManager/led.cpp"
 },
 {
   "directory": "/home/abdelaziz/SmartHome/cppAPP/build",
-  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -o CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/airConditioner.cpp",
+  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -std=gnu++17 -o CMakeFiles/Device-Controller.dir/src/deviceManager/airConditioner.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/airConditioner.cpp",
   "file": "/home/abdelaziz/SmartHome/cppAPP/src/deviceManager/airConditioner.cpp"
 },
 {
   "directory": "/home/abdelaziz/SmartHome/cppAPP/build",
-  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -o CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/serviceManager/serviceManager.cpp",
+  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -std=gnu++17 -o CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/src/serviceManager/serviceManager.cpp",
   "file": "/home/abdelaziz/SmartHome/cppAPP/src/serviceManager/serviceManager.cpp"
 },
 {
   "directory": "/home/abdelaziz/SmartHome/cppAPP/build",
-  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -o CMakeFiles/Device-Controller.dir/main.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/main.cpp",
+  "command": "/usr/bin/c++   -I/home/abdelaziz/SmartHome/cppAPP/src -I/home/abdelaziz/SmartHome/cppAPP/src/clientHandler -I/home/abdelaziz/SmartHome/cppAPP/src/deviceManger -I/home/abdelaziz/SmartHome/cppAPP/src/parser -I/home/abdelaziz/SmartHome/cppAPP/src/serviceManger  -g   -std=gnu++17 -o CMakeFiles/Device-Controller.dir/main.cpp.o -c /home/abdelaziz/SmartHome/cppAPP/main.cpp",
   "file": "/home/abdelaziz/SmartHome/cppAPP/main.cpp"
 }
 ]
