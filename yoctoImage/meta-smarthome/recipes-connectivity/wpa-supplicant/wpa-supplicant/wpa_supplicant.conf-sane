@@ -1,0 +1,9 @@
+ctrl_interface=/var/run/wpa_supplicant
+ctrl_interface_group=0
+update_config=1
+
+network={
+	ssid="TP-Link_D28C"
+	psk=8384e76006c1ffb2d884100534e850fcbf953ad99dc09937eaa9f9c096fc353c
+	key_mgmt=WPA-PSK
+}

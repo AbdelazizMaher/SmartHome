@@ -1,0 +1,18 @@
+# Default server configuration
+
+server {
+	listen 3000 default_server;
+	
+	# Set the root directory for serving files to /var/www/react-app.
+	root /var/www/react-app;
+	
+	 # Specify default files to serve when a directory is requested.
+	index index.html index.htm;
+	
+	# Use this server block for any request that doesn't match other server_name directives.
+	server_name _;
+
+	# redirect server error pages to the static page /50x.html
+	error_page 500 502 503 504 /50x.html;
+}
+
