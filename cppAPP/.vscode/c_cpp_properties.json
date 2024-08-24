@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/include",
-                "/usr/local/include"
+                "/usr/local/include",
+                "/usr/include/SFML"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
