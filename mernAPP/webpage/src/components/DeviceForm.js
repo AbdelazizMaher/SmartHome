@@ -9,13 +9,29 @@ export default function DeviceForm() {
     const name = useRef();
   
     const [devices, setDevices] = useState([])
-  
+
+    // useEffect to fetch device information when the component mounts or when devices array changes
     useEffect(()=> {
       Axios.get("http://localhost:3001/devicesInfos")
       .then(res => { setDevices(res.data) })
       .catch(err => { console.error(err); });
     },[devices])
-  
+
+    // useEffect that sends the devices data to the C++ application on a Raspberry Pi
+    useEffect(() => {
+      Axios.get("http://localhost:3001/devicesInfos")
+        .then((res) => {
+          SetComponent(res.data);
+          console.log("useEffect", res.data);
+          const db = JSON.stringify(res.data);
+          Axios.post(`http://192.168.1.120:2222`, db)
+            .then((res) => { console.log("Data sent successfully:", res.data); })
+            .catch((err) => { console.log(err); }
+            , []);
+        })
+        .catch((err) => { console.log(err); });
+    }, []);    
+
     const buttonHandle = ()=>{
       Axios.post("http://localhost:3001/addDevice", {
         identifier: identifier.current.value,
@@ -24,8 +40,22 @@ export default function DeviceForm() {
       })
       .then(res => { 
         console.log("Data sent successfully:", res.data);
+        // Update the devices state with the newly added device
+        setDevices([
+          ...devices, 
+          {
+            identifier: identifier.current.value,
+            name: name.current.value,
+            status: res.data.status,
+          }
+        ]);
        })
       .catch(err => { console.error(err); });
+      const db = JSON.stringify(res.data);
+      Axios.post("http://192.168.1.120:2222", db)
+        .then((res) => { console.log("Data sent successfully:", res.data); })
+        .catch((err) => { console.log(err); }
+        , []);
     }
 
     const tagClickHandle = (device) => {
