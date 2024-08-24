@@ -3,7 +3,7 @@
 namespace sh {
 
 /** Default constructor implementation */
-clientHandler::clientHandler() : m_port(222), m_serverSocket(-1), m_clientSocket(-1)
+clientHandler::clientHandler() : m_port(2222), m_serverSocket(-1), m_clientSocket(-1)
 {
 }
 

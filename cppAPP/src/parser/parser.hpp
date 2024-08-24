@@ -10,7 +10,7 @@ namespace sh {
 class parser
 {
 public:
-     /** Default constructor */   
+    /** Default constructor */   
     parser() = default;
     /** Default destructor */ 
     ~parser() = default; 
