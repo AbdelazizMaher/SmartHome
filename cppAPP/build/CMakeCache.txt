@@ -214,12 +214,6 @@ Device-Controller_BINARY_DIR:STATIC=/home/abdelaziz/SmartHome/cppAPP/build
 //Value Computed by CMake
 Device-Controller_SOURCE_DIR:STATIC=/home/abdelaziz/SmartHome/cppAPP
 
-//Value Computed by CMake
-Project_BINARY_DIR:STATIC=/home/abdelaziz/SmartHome/cppAPP/build
-
-//Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/home/abdelaziz/SmartHome/cppAPP
-
 
 ########################
 # INTERNAL cache entries

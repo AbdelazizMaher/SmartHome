@@ -190,7 +190,7 @@ std::pair<Status, std::string> clientHandler::requestHandle()
     /** Find the position of the body in the request */
     auto bodyPosition = request.find("\r\n\r\n");
     /** Check if finding the body position failed */
-    if (bodyPosition != std::string::npos)
+    if (bodyPosition == std::string::npos)
     {
         std::cerr << "Failed to find body position." << std::endl;
         closeConnection(SocketState::CLOSE_CLIENT_SOCKET);

@@ -1144,30 +1144,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/abdelaziz/SmartHome/cppAPP"
-		},
-		{
-			"name" : "Project_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/abdelaziz/SmartHome/cppAPP/build"
-		},
-		{
-			"name" : "Project_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/abdelaziz/SmartHome/cppAPP"
 		}
 	],
 	"kind" : "cache",

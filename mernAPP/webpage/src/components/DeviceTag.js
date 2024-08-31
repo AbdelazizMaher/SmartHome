@@ -10,7 +10,7 @@ export default function DeviceTag({ device, tagClickHandle }) {
       <h1 className="tag-item">
         <h3>
           <span className="device-id">
-            {device._id}
+            {device.identifier}
           </span>
           {" "}{device.name}
         </h3>

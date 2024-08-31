@@ -21,10 +21,10 @@ export default function DeviceForm() {
     useEffect(() => {
       Axios.get("http://localhost:3001/devicesInfos")
         .then((res) => {
-          SetComponent(res.data);
+          setDevices(res.data);
           console.log("useEffect", res.data);
           const db = JSON.stringify(res.data);
-          Axios.post(`http://192.168.1.120:2222`, db)
+          Axios.post(`http://192.168.0.106:2222`, db)
             .then((res) => { console.log("Data sent successfully:", res.data); })
             .catch((err) => { console.log(err); }
             , []);
@@ -36,23 +36,24 @@ export default function DeviceForm() {
       Axios.post("http://localhost:3001/addDevice", {
         identifier: identifier.current.value,
         name: name.current.value,
-        status: "off"
+        status: false
       })
-      .then(res => { 
-        console.log("Data sent successfully:", res.data);
-        // Update the devices state with the newly added device
-        setDevices([
-          ...devices, 
-          {
-            identifier: identifier.current.value,
-            name: name.current.value,
-            status: res.data.status,
-          }
-        ]);
-       })
-      .catch(err => { console.error(err); });
-      const db = JSON.stringify(res.data);
-      Axios.post("http://192.168.1.120:2222", db)
+        .then((res) => { 
+          console.log("Data sent successfully:", res.data);
+          // Update the devices state with the newly added device
+          setDevices([
+            ...devices, 
+            {
+              identifier: identifier.current.value,
+              name: name.current.value,
+              status: res.data.status,
+            }
+          ]);
+        })
+        .catch((err) => { console.error(err); });
+
+      const db = JSON.stringify(devices);
+      Axios.post("http://192.168.0.106:2222", db)
         .then((res) => { console.log("Data sent successfully:", res.data); })
         .catch((err) => { console.log(err); }
         , []);

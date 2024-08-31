@@ -1,11 +1,17 @@
 #include "serviceManager.hpp"
 
+#include "../deviceManager/led.hpp"
+#include "../deviceManager/airConditioner.hpp"
+
 namespace sh {
 
 /** Constructor to initialize the service manager */
 serviceManager::serviceManager()
 {
     m_clientHandler.initConnection();
+
+    m_deviceManager.add_device(std::make_shared<led>());
+    m_deviceManager.add_device(std::make_shared<airConditioner>());
 }
 
 /** Method to process incoming requests */

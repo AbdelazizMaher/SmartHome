@@ -2,13 +2,13 @@ const { Schema, model } = require('mongoose')
 
 const deviceInfoSchema = new Schema({
     identifier:{
-        type: String,
+        type: Number,
     },
     name:{
         type: String,
     },
     status:{
-        type: String,
+        type: Boolean,
     }
 })
 

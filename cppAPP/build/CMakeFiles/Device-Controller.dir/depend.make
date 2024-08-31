@@ -122,6 +122,7 @@ CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.o: ../src/nlohmann/thirdp
 CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.o: ../src/parser/parser.cpp
 CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.o: ../src/parser/parser.hpp
 
+CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/clientHandler/httpGetHandle.hpp
 CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/deviceManager/Idevice.hpp
 CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/nlohmann/adl_serializer.hpp
 CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/nlohmann/byte_container_with_subtype.hpp
@@ -170,7 +171,9 @@ CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src
 CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/nlohmann/thirdparty/hedley/hedley_undef.hpp
 CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/clientHandler/clientHandler.hpp
 CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/deviceManager/Idevice.hpp
+CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/deviceManager/airConditioner.hpp
 CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/deviceManager/deviceManager.hpp
+CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/deviceManager/led.hpp
 CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/parser/parser.hpp
 CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/serviceManager/serviceManager.cpp
 CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o: ../src/serviceManager/serviceManager.hpp

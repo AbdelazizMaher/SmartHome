@@ -12,19 +12,21 @@ led::led()
 
 bool led::run(devices status_dev)
 {
-    std::cout << "led is running now " << status_dev.name << " status " << status_dev.status << std::endl;
+    std::cout << "Device: " << status_dev.name << " Status: " << status_dev.status << std::endl;
 
     if (last_status != status_dev.status)
     {
         last_status = status_dev.status;
 
-        int fd = open("/dev/led", O_WRONLY);
+        int fd = 1/*open("/dev/led", O_WRONLY)*/;
+        std::cout << " opening /dev/led " << std::endl;
         if (fd < 0)
             return false;
 
         if (status_dev.status)
         {
-            int ret = write(fd, "1", 1);
+            int ret = 1/*write(fd, "1", 1)*/;
+            std::cout << " setting /dev/led " << std::endl;
             if (ret < 0)
             {
                 return false;
@@ -32,14 +34,15 @@ bool led::run(devices status_dev)
         }
         else
         {
-            int ret = write(fd, "0", 1);
+            int ret = 1/*write(fd, "0", 1)*/;
+            std::cout << " reseting /dev/led " << std::endl;
             if (ret < 0)
             {
                 return false;
             }
         }
 
-        close(fd);
+        //close(fd);
     }
     return true;
 }

@@ -123,6 +123,7 @@ CMakeFiles/Device-Controller.dir/src/parser/parser.cpp.o
  /home/abdelaziz/SmartHome/cppAPP/src/parser/parser.cpp
  /home/abdelaziz/SmartHome/cppAPP/src/parser/parser.hpp
 CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o
+ ../src/clientHandler/httpGetHandle.hpp
  ../src/deviceManager/Idevice.hpp
  ../src/nlohmann/adl_serializer.hpp
  ../src/nlohmann/byte_container_with_subtype.hpp
@@ -171,7 +172,9 @@ CMakeFiles/Device-Controller.dir/src/serviceManager/serviceManager.cpp.o
  ../src/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /home/abdelaziz/SmartHome/cppAPP/src/clientHandler/clientHandler.hpp
  /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/Idevice.hpp
+ /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/airConditioner.hpp
  /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/deviceManager.hpp
+ /home/abdelaziz/SmartHome/cppAPP/src/deviceManager/led.hpp
  /home/abdelaziz/SmartHome/cppAPP/src/parser/parser.hpp
  /home/abdelaziz/SmartHome/cppAPP/src/serviceManager/serviceManager.cpp
  /home/abdelaziz/SmartHome/cppAPP/src/serviceManager/serviceManager.hpp
