@@ -17,7 +17,7 @@ IMAGE_INSTALL += "dhcpcd linux-firmware-bcm43430 iptables wpa-supplicant "
 
 # applications and services.  
 IMAGE_INSTALL += "device-controller frontend nginx configstartup-sv " 
-
+IMAGE_INSTALL += "nodejs fota-server " 
 
 
 # The firmware `linux-firmware-bcm43455` is required for additional hardware support.
