@@ -1,7 +1,8 @@
 #include "src/serviceManager/serviceManager.hpp"
-
+#include <iostream>
 int main()
 {
+    std::cout << "Version 1 of the app,,," << std::endl;
     /** Create an instance of the service manager */
     sh::serviceManager serviceManager{};
 

@@ -10,8 +10,8 @@ export default function App() {
     <div>
       <Background />
       <Header />
-      <DeviceForm />
       <FotaUpload />
+      <DeviceForm />
     </div>
   );
 }

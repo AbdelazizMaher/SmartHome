@@ -19,12 +19,12 @@ export default function DeviceForm() {
 
     // useEffect that sends the devices data to the C++ application on a Raspberry Pi
     useEffect(() => {
-      Axios.get("http://localhost:3001/devicesInfos")
+      Axios.get("http://10.42.0.1:3001/devicesInfos")
         .then((res) => {
           setDevices(res.data);
           console.log("useEffect", res.data);
           const db = JSON.stringify(res.data);
-          Axios.post(`http://192.168.0.106:2222`, db)
+          Axios.post(`http://10.42.0.2:2222`, db)
             .then((res) => { console.log("Data sent successfully:", res.data); })
             .catch((err) => { console.log(err); }
             , []);
@@ -33,7 +33,7 @@ export default function DeviceForm() {
     }, []);    
 
     const buttonHandle = ()=>{
-      Axios.post("http://localhost:3001/addDevice", {
+      Axios.post("http://10.42.0.1:3001/addDevice", {
         identifier: identifier.current.value,
         name: name.current.value,
         status: false
@@ -53,7 +53,7 @@ export default function DeviceForm() {
         .catch((err) => { console.error(err); });
 
       const db = JSON.stringify(devices);
-      Axios.post("http://192.168.0.106:2222", db)
+      Axios.post("http://10.42.0.2:2222", db)
         .then((res) => { console.log("Data sent successfully:", res.data); })
         .catch((err) => { console.log(err); }
         , []);
@@ -62,7 +62,7 @@ export default function DeviceForm() {
     const tagClickHandle = (device) => {
       try {
         console.log("id is ", device.identifier);
-        Axios.get(`http://localhost:3001/Led/${device.identifier}`)
+        Axios.get(`http://10.42.0.1:3001/Led/${device.identifier}`)
           .then((res) => {
             console.log("Data sent successfully:", res.data.devices);
             setDevices([...devices], res.data.devices);
