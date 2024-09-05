@@ -6,9 +6,6 @@ obj-m += gpioDriver.o
 # gpioDriver-y lists the source files for the gpioDriver module
 gpioDriver-y := gpio.o gpio-file-operations.o
 
-# Define where the kernel source is located
-KERNEL_SRC := /lib/modules/$(shell uname -r)/build
-
 # Get the current working directory
 PWD := $(shell pwd)
 
@@ -17,8 +14,7 @@ all:
     # Invoke the kernel build system
     # -C $(KERNEL_SRC) changes to the kernel source directory
     # M=$(PWD) specifies the directory of the module source files
-    # modules tells the kernel build system to build the modules
-    $(MAKE) -C $(KERNEL_SRC) M=$(PWD) modules
+    $(MAKE) -C $(KERNEL_SRC) M=$(PWD)
 
 # Install target to install the modules
 modules_install:

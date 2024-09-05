@@ -16,7 +16,7 @@
  * @param file Pointer to the file structure representing the open file in memory.
  * @return 0 on success, or a negative error code on failure.
  */
-static int driver_open(struct inode *inode, struct file *file);
+int driver_open(struct inode *inode, struct file *file);
 
 
 /**
@@ -30,7 +30,7 @@ static int driver_open(struct inode *inode, struct file *file);
  * @param file Pointer to the file structure representing the open file in memory.
  * @return 0 on success, or a negative error code on failure.
  */
-static int driver_close(struct inode *inode, struct file *file);
+int driver_close(struct inode *inode, struct file *file);
 
 /**
  * @brief Called when the device file is released.
@@ -42,7 +42,7 @@ static int driver_close(struct inode *inode, struct file *file);
  * @param instance Pointer to the file structure representing the open file in memory.
  * @return 0 on success, or a negative error code on failure.
  */
-static int driver_release(struct inode *device_file, struct file *instance);
+int driver_release(struct inode *device_file, struct file *instance);
 
 
 /**

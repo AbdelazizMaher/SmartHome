@@ -94,7 +94,7 @@ gpio21_fail:
 device_fail:
     class_destroy(gpioData_st.gpio_class);
 class_fail:
-    cdev_del(&gpioData_st.gpio_device);
+    cdev_del(&gpioData_st.cdev_obj);
 cdev_fail:
     unregister_chrdev_region(gpioData_st.device_number, 1);
 alloc_fail:
