@@ -30,7 +30,7 @@ export default function FotaUpload() {
             const arrayBuffer = fileReader.result;
 
             // Axios request to upload the file as binary
-            Axios.post('http://10.42.0.2:2222/upload', arrayBuffer, {
+            Axios.post("http://10.42.0.2:8080/upload", arrayBuffer, {
                 headers: {
                     'Content-Type': 'application/octet-stream'
                 }
