@@ -25,7 +25,7 @@ bool serviceManager::processRequest()
         return false;
 
     /** Output the received message to the console */
-    std::cout << "Received message: " << response << std::endl;  
+    std::cout << "Devices before parsing: " << response << std::endl;  
 
     /** Parse the response to extract device information and log it */
     auto devices = m_parser.parse(response);

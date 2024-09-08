@@ -1,18 +1,18 @@
 #include "gpio-file-operations.h"
 
-static int driver_open(struct inode *inode, struct file *file)
+int driver_open(struct inode *inode, struct file *file)
 {
     printk("Module open function called\n");
     return 0;
 }
 
-static int driver_close(struct inode *inode, struct file *file)
+int driver_close(struct inode *inode, struct file *file)
 {
     printk("Module close function called\n");
     return 0;
 }
 
-static int driver_release(struct inode *device_file, struct file *instance)
+int driver_release(struct inode *device_file, struct file *instance)
 {
     printk("Module release function called\n");
     return 0;

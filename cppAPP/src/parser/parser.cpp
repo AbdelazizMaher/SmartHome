@@ -8,6 +8,8 @@ void parser::log(std::vector<devices> &dev)
     /** Iterate over each device in the vector */
     for (auto &element : dev)
     {
+        std::cout << "=======================" << std::endl;
+
         std::cout << "Device ID: " << element._id << std::endl;
         std::cout << "Device Identifier: " << element.identifier << std::endl;
         std::cout << "Device Name: " << element.name << std::endl;

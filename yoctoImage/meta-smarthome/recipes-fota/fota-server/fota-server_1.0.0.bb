@@ -39,7 +39,7 @@ do_install() {
     cp -r ${S}/* ${D}${bindir}/fota-server/
     
     # create a symbolic link to the main script for easier execution
-    ln -sf ${bindir}/fota-server/server.js ${D}${bindir}/fota-server.js
+    ln -sf /usr/bin/fota-server/server.js ${D}${bindir}/fota-server.js
 }
 
 LICENSE:${PN} = "Unknown"

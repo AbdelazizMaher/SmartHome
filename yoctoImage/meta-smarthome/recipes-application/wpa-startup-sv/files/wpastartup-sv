@@ -4,15 +4,6 @@ case "$1" in
       start)
             wpa_supplicant -iwlan0 -c/etc/wpa_supplicant.conf &
 
-            echo "Starting dhcpcd..."
-            dhcpcd &
-
-            echo "Starting FOTA server..."
-            /usr/bin/node /usr/bin/fota-server.js &
-
-            echo "Loading GPIO driver using modprobe..."
-            modprobe gpioDriver  
-
             echo "Services started."               
             ;;
       stop)

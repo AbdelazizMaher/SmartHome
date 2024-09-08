@@ -25,7 +25,7 @@ IMAGE_INSTALL += "nodejs fota-server "
 CORE_IMAGE_EXTRA_INSTALL += "linux-firmware-bcm43455 "
 
 # Automatically load kernel modules on boot.
-KERNEL_MODULE_AUTOLOAD += "gpioDriver "
+KERNEL_MODULE_AUTOLOAD += "gpioDriver"
 
 
 # This function appends configuration settings to `dhcpcd.conf`.
