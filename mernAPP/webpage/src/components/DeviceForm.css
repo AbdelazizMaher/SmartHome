@@ -1,11 +1,12 @@
 .form {
-    margin-top: 10%;
+    margin-top: 20px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 50%;
+    background-color: rgba(62, 79, 74, 0.5);
+    width: 45%;
     height: fit-content;
     padding: 20px;
 }
+
 .form:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -51,8 +52,8 @@ button {
 }
 
 button:hover {
-    background-color: rgba(238, 241, 14, 0.8);
-    color: white;
+    background-color: rgba(56, 104, 4, 0.8);
+    color: rgb(245, 245, 245);
 }
 
 button:focus {

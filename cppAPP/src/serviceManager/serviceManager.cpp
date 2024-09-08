@@ -10,6 +10,7 @@ serviceManager::serviceManager()
 {
     m_clientHandler.initConnection();
 
+    /** Add available devices */
     m_deviceManager.add_device(std::make_shared<led>());
     m_deviceManager.add_device(std::make_shared<airConditioner>());
 }
@@ -26,8 +27,10 @@ bool serviceManager::processRequest()
     /** Output the received message to the console */
     std::cout << "Received message: " << response << std::endl;  
 
-    /** Parse the response to extract device information */
+    /** Parse the response to extract device information and log it */
     auto devices = m_parser.parse(response);
+    m_parser.log(devices);
+
     /** Manage the parsed devices and return the result */
     if(!m_deviceManager.manage(devices))
         return false;

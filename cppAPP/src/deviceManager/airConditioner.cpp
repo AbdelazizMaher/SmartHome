@@ -15,9 +15,13 @@ bool airConditioner::run(devices status_dev)
     if (last_status != status_dev.status)
     {
         last_status = status_dev.status;
+        
 
         //TODO
-        std::cout << " Dummy airconditioner " << std::endl;
+        if (last_status == 1)
+          std::cout << " ==== AirConditioner: ON ====" << std::endl;
+        else
+          std::cout << " ==== AirConditioner: OFF ====" << std::endl;
     }
     return true;
 }

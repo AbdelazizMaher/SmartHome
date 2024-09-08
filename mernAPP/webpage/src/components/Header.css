@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 
+
 .headerlabel{
-    font-size: 5em;
+    font-size: 3em;
     font-weight: bold;
     color: rgb(255, 255, 255);
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
-    left: 100px;
-    margin-left: 100px;
+    left: 70px;
+    margin-left: 70px;
     margin-top: 140px;
     position: absolute;
     font-family: "Poetsen One", sans-serif;
@@ -18,6 +19,7 @@
 }
 .headerimage{
     width: 100%;
+    height: 30vh;
     border-radius: 0px 0px 80px 80px;
     border: 2px solid #eee064;
 }

@@ -12,7 +12,7 @@ export default function DeviceForm() {
 
     // useEffect to fetch device information when the component mounts or when devices array changes
     useEffect(()=> {
-      Axios.get("http://localhost:3001/devicesInfos")
+      Axios.get("http://10.42.0.1:3001/devicesInfos")
       .then(res => { setDevices(res.data) })
       .catch(err => { console.error(err); });
     },[devices])
