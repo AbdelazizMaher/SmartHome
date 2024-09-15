@@ -48,15 +48,6 @@ The web interface thus serves as a central hub for managing devices and updating
 ### LinuxModules
 A custom GPIO driver, `gpioDriver`, which interacts with `GPIO pin 21` on the Raspberry Pi. The driver provides a simple interface for controlling the pin state `(high or low)` through a character device and provides an interface for the `C++ application` to interact with the hardware layer
 
-#### Initialization and Registration
-
-The driver is initialized in the `driver_INIT` function, which performs the following steps:
-1. **Device Number Allocation:** Uses `alloc_chrdev_region` to dynamically allocate a device number for the driver.
-2. **Character Device Setup:** Initializes a `cdev` structure with file operations defined in `gpio-file-operations.h` (`open`, `write`, `read`, `release`).
-3. **Device Registration:** Registers the `cdev` structure with the VFS.
-4. **Class and Device Creation:** Creates a device class and device entry under `/sys/class/gpio21/led-home`.
-5. **GPIO Request and Configuration:** Requests access to GPIO pin 21 and sets it as an output.
-
 #### File Operations
 
 - **Open (`driver_open`):** Invoked when the device file is opened. Sets up the device or checks initial conditions.
