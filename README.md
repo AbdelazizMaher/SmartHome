@@ -74,9 +74,33 @@ Once the module is loaded, it creates a device file (e.g., `/dev/led-home`). Wri
 ---
 
 ### C++ Application
-- Implements core functionalities using design patterns for maintainability and scalability.
-- Uses socket programming for efficient inter-process communication.
-- Built and managed with CMake to streamline the build process.
+The C++ application is the core of the Smart Home project, implementing key functionalities to control devices and interact with the server. It is designed with modularity and maintainability in mind, utilizing design patterns and efficient inter-process communication.
+
+#### Components:
+
+- **Client Handler (`clientHandler`):**
+  - Manages HTTP requests from the web interface.
+  - Routes requests to appropriate modules based on the type of action required (e.g., device control, status update).
+  - Implements functionality for handling GET and POST requests, parsing them, and extracting necessary data for further processing.
+
+- **Device Manager (`deviceManager`):**
+  - Manages device-specific operations and interactions with hardware.
+  - Implements classes for different devices (e.g., `led`, `airConditioner`).
+    - **`led.cpp`:** Controls LED hardware by interacting with the GPIO driver. Allows toggling LED states (on/off) based on received commands.
+    - **`airConditioner.cpp`:** Interfaces with the dummy air conditioning unit, logging the state of the device.
+  - Encapsulates device-related logic to ensure a clean separation between application logic and hardware control.
+
+- **JSON Parsing (`parser` and `nlohmann`):**
+  - Utilizes the nlohmann JSON library for parsing and handling JSON data.
+  - Parses incoming requests and configurations, extracting necessary information such as device states, commands, and parameters.
+  - Provides a robust interface for converting between JSON objects and internal data structures, enabling smooth data exchange.
+
+- **Service Manager (`serviceManager`):**
+  - Acts as the main orchestrator for the application's functionalities.
+  - Maintains a continuous loop to process incoming requests and delegate tasks to appropriate modules.
+  - Integrates with `clientHandler` and `deviceManager` to execute commands, update device states, and interact with the web interface.
+  - Uses socket programming to communicate with the web server, sending and receiving data to synchronize device states and handle user commands.
+
 
 ---
 
