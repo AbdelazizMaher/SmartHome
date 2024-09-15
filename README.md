@@ -73,5 +73,3 @@ The web interface thus serves as a central hub for managing devices and updating
 - `/mernAPP`: Houses the MERN stack components, including React frontend and Node.js backend.
 - `/yoctoImage`: Yocto project configuration files and recipes for building the system image.
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
