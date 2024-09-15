@@ -43,14 +43,51 @@ The `mernAPP` directory contains the web development portion of the Smart Home p
 
 The web interface thus serves as a central hub for managing devices and updating the system firmware, making it an integral part of the Smart Home project.
 
-### Device Driver
-- Manages hardware components such as GPIOs and LEDs.
-- Provides an interface for the C++ application to interact with the hardware layer.
+---
+
+### LinuxModules
+A custom GPIO driver, `gpioDriver`, which interacts with `GPIO pin 21` on the Raspberry Pi. The driver provides a simple interface for controlling the pin state `(high or low)` through a character device and provides an interface for the `C++ application` to interact with the hardware layer
+
+#### Initialization and Registration
+
+The driver is initialized in the `driver_INIT` function, which performs the following steps:
+1. **Device Number Allocation:** Uses `alloc_chrdev_region` to dynamically allocate a device number for the driver.
+2. **Character Device Setup:** Initializes a `cdev` structure with file operations defined in `gpio-file-operations.h` (`open`, `write`, `read`, `release`).
+3. **Device Registration:** Registers the `cdev` structure with the VFS.
+4. **Class and Device Creation:** Creates a device class and device entry under `/sys/class/gpio21/led-home`.
+5. **GPIO Request and Configuration:** Requests access to GPIO pin 21 and sets it as an output.
+
+#### File Operations
+
+- **Open (`driver_open`):** Invoked when the device file is opened. Sets up the device or checks initial conditions.
+- **Write (`driver_write`):** Handles data written to the device file. Accepts a character ('0' or '1') to set the GPIO pin state.
+- **Read (`driver_read`):** Returns an error as this driver is set up for output-only.
+- **Release (`driver_release`):** Cleans up any resources when the device file is closed.
+
+#### Makefile
+The provided Makefile is structured to build the `gpioDriver` module:
+- Compiles `gpio.c` and `gpio-file-operations.c` into `gpioDriver.o`.
+- Uses `KERNEL_SRC` for kernel source directory reference.
+- Includes `modules_install` and `clean` targets for installing and cleaning up the module.
+
+#### File Overview
+
+- **gpio.c:** Contains the main initialization and exit functions for the GPIO driver.
+- **gpio-file-operations.h:** Declares file operation functions for the driver.
+- **gpio-file-operations.c:** Implements the file operations (`open`, `write`, `read`, `release`).
+
+#### Usage
+
+Once the module is loaded, it creates a device file (e.g., `/dev/led-home`). Writing '0' or '1' to this file will set GPIO pin 21 to low or high, respectively.
+
+---
 
 ### C++ Application
 - Implements core functionalities using design patterns for maintainability and scalability.
 - Uses socket programming for efficient inter-process communication.
 - Built and managed with CMake to streamline the build process.
+
+---
 
 ### Yocto
 - Customizes the Linux image to fit the project's needs.
