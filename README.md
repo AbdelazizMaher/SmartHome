@@ -105,23 +105,27 @@ The C++ application is the core of the Smart Home project, implementing key func
 ---
 
 ### Yocto
-- Customizes the Linux image to fit the project's needs.
-- Includes various recipes:
-  - **CMake Recipe**: Integrates CMake into the Yocto build process.
-  - **Module Recipe**: Compiles and integrates kernel modules.
-  - **Devtool**: Assists in development and debugging.
-  - **Startup**: Configures startup scripts and services.
-  - **WiFi and Static IP**: Configures network settings for connectivity.
-  - **Frontend and Nginx**: Deploys the web interface and configures the Nginx server.
+The Yocto Project is used to customize the Linux image for the Smart Home project, ensuring a tailored environment for the specific hardware and software requirements.
 
-## Getting Started
-1. **Clone the Repository**: Instructions to clone the project repository.
-2. **Building the Project**: Steps to build each component using Yocto and CMake.
-3. **Running the Application**: How to start the system and access the web interface.
+- **Custom Recipes**: The Yocto image includes several custom recipes to incorporate essential tools and services:
+  - **CMake Integration**: A recipe to add CMake for building the C++ application directly on the device if needed.
+  - **Kernel Modules**: Automatically installs and loads custom kernel modules like `gpioDriver` for GPIO control on the Raspberry Pi.
+  - **Startup Configuration**: Includes startup scripts and services to initialize applications like `device-controller` and `frontend`.
+  - **Network Configuration**: Recipes to set up `dhcpcd` for managing network interfaces and `iptables` for network security.
+  - **Web and FOTA Services**: Integrates Node.js for the FOTA server and Nginx for the web interface, facilitating interaction with the C++ application.
 
-## Project Structure
-- `/cppApp`: Contains the C++ application source code and build system.
-- `/deviceDrivers`: Includes the code for device drivers managing hardware.
-- `/mernAPP`: Houses the MERN stack components, including React frontend and Node.js backend.
-- `/yoctoImage`: Yocto project configuration files and recipes for building the system image.
+- **Image Specifics**: Two different image configurations (`smarthome-image-rpi-bplus.bb` and `smarthome-image-rpi4.bb`) are provided to support both the Raspberry Pi B+ and Raspberry Pi 4:
+  - **Common Features**:
+    - **SSH Access**: Includes Dropbear SSH server for secure shell access to the device.
+    - **Debugging Tools**: `strace`, `bash`, `make`, and `cmake` for in-field debugging and building.
+    - **Static IP Configuration**: Sets a static IP for the network interface (`eth0` for Pi B+ and `wlan0` for Pi 4) through `dhcpcd.conf`, ensuring reliable communication in a network.
+    - **Device Control**: Integrates `device-controller`, which manages device states and synchronization with the frontend.
+  - **Raspberry Pi B+ Specifics**:
+    - Focuses on Ethernet (`eth0`) for network connectivity.
+  - **Raspberry Pi 4 Specifics**:
+    - Includes `wpa-supplicant` for Wi-Fi management (`wlan0`).
+    - Adds extra firmware (`linux-firmware-bcm43455`) for additional hardware support.
+
+By customizing the Yocto image, the Smart Home project ensures a reliable and optimized runtime environment for both the software stack and hardware interaction, enabling seamless integration of device control, network management, and user interface functionalities.
+
 
